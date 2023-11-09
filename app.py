@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Function to read in details for page
-filepath = "/static/content.txt"
+filepath = "static/content.txt"
 def readDetails(filepath):
     with open(filepath, 'r') as f:
         return [line for line in f]
